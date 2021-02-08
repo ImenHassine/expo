@@ -13,7 +13,6 @@ def use_unimodules!(custom_options = {})
     exclude: [],
     flags: {}
   }.deep_merge(json_options).deep_merge(custom_options)
-
   modules_paths = options.fetch(:modules_paths)
   modules_to_exclude = options.fetch(:exclude)
   target = options.fetch(:target)
